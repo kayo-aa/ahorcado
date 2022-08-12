@@ -1,0 +1,200 @@
+
+body{
+  background-color: #F3F5FC;
+  padding: 32px 16px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+*{
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+header{
+  max-height: calc(96px - 24px);/*tamaño total(contando el padding menos 24px de padding*/
+  /* padding: 24px 16px 0 16px ; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 64px;
+}
+
+.alura-logo{
+  height: calc(48px*1.5);
+  width: calc(32px*1.5);
+}
+
+.title{
+  margin: 0 0 0 16px;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 32px;
+  color: #0A3871;
+  text-align: center;
+  align-self: center;
+}
+
+
+main{
+  /* padding: 32px 0 32px; */
+  height:100%; /*si pongo 100vh funciona bien pero para celulares chicos (como el iphone 4) no reconoce el padding. Asummo que es por la altura. Por eso, abajo hay un media adicional para cambiar el main por 100vh para celulares medianos. Ahí pongo 100vh y sí respeta el padding */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.text-entry{
+  width: 100%;
+  padding: 32px 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+textarea{
+  width: 100%;
+  padding: 0;
+  min-height: 3.5em;/*es el tamaño necesario para que entren 3 renglones */
+  text-align: center;
+  border: none;
+  background-color: #F3F5FC;
+  font-weight: 400;
+  font-size: 32px;
+  color: #0A3871;
+  resize: none;
+  flex-grow: 1;
+  outline: none;
+}
+
+textarea::-webkit-input-placeholder {
+  text-align: center;
+  color: #0a38719a;
+}
+
+
+
+.alert{
+  height: 16px;
+  margin-top: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+
+.alert img{
+  display: inline-block;
+  width: 16px;
+  height: 100%;
+}
+
+.alert h3{
+  padding-left: 5px;
+  margin: 0;
+  display: inline-block;
+  height: 100%;
+  width: max-content;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  /* vertical-align: middle; */
+}
+
+.options{
+  height: max-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 32px 0;
+}
+
+button{
+  width: 343px;
+  height: 67px;
+  border-radius: 24px;
+  border: 1px solid #072B61;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+#encrypt{
+  background: #0A3871;
+  color: white;
+}
+
+#decrypt{
+  margin-top: 24px;
+  background: #ffffff;
+  color: #0A3871 ;
+}
+
+
+.output{
+  background: #FFFFFF;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.1);
+  border-radius: 32px;
+  text-align: center;
+  padding: 32px;
+  margin: 32px 0 0;
+  flex-grow: 1;
+}
+
+.output img{
+  display: none;
+}
+
+.output h2{
+  color: #343A40;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0 0 16px 0;
+}
+
+.output p{
+  color: #495057;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0;
+  text-align: center;
+}
+
+#copy{
+  display: none;
+  width: calc(100% - 32px);
+  margin-top: 24px;
+  background: #ffffff;
+  color: #0A3871;
+}
+
+@media screen and (min-width: 375px){
+  main{
+    height: 100vh;
+  }
+
+}
+
+@media screen and (min-width: 450px){
+  #copy{
+    width: 343px;
+  }
+}
+
+@media screen and (min-width: 718px){
+  #decrypt, #encrypt{
+    margin: 0;
+  }
+
+}

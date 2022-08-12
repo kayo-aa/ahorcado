@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- <meta name="viewport" content="width=device-width initial-scale=1.0"> -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <button class ="buttonAlura" onclick="returnToHome()" ><img src="img/Vector.png" alt=""></button>
+    
+  </header>
+
+<main class="container">
+  <section class="ahorcado invisible">
+    <canvas width="268" height="165"></canvas>
+    <div class="ahorcado__word">
+      <p class="ahorcado__word__character invisible">_</p>
+      <p class="ahorcado__word__character invisible">_</p>
+      <p class="ahorcado__word__character invisible">_</p>
+      <p class="ahorcado__word__character invisible">_</p>
+      <p class="ahorcado__word__character invisible">_</p>
+      <p class="ahorcado__word__character invisible">_</p>
+      <p class="ahorcado__word__character invisible">_</p>
+      <p class="ahorcado__word__character invisible">_</p>
+      <p class="ahorcado__word__character invisible">_</p>
+    </div>
+    <p class="equivocaciones invisible"></p>
+    <h2 class="information invisible"></h2>
+  </section>
+
+  <section class="text-entry invisible">
+      <textarea id="content" placeholder="Ingrese una palabra"></textarea>
+      <h3><span></span> Ocho letras máximo</h3>
+  </section>
+
+  <section class="options ">
+    <button class="options__button options__button-primary">Iniciar juego</button>
+    <button class="options__button options__button-secondary ">Agregar nueva palabra</button>
+  </section>
+</main>
+</body>
+
+<script src="js/index.js"></script>
+<script src="js/canvas.js"></script>
+<script src="js/game.js" ></script>
+</html>

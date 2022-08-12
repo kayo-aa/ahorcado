@@ -1,0 +1,168 @@
+body{
+  background-color: #F3F5FC;
+  padding: 16px;
+  font-family: 'Inter', sans-serif;
+}
+
+header{
+  width: 100%;
+  padding-top: 8px;
+}
+
+img{
+  width: 32px;
+  height: 48px;
+  padding: 0;
+}
+
+.buttonAlura{
+  padding: 0;
+  border: none;
+  background-color: #F3F5FC;
+  height: 48px;
+  width: 32px;
+}
+
+.container{
+  height: calc(100vh - 60px - 32px);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  /* flex-direction: column; */
+  align-items: center;
+}
+
+.ahorcado{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ahorcado__word{
+  height: min-content;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ahorcado__word__character{
+  margin: 0;
+  font-weight: 400;
+  font-size: 32px;
+  color: #0A3871;
+}
+
+.text-entry{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 32px 0;
+}
+
+#content{
+  width: 100%;
+  padding: 0;
+  min-height: 3.5em;/*es el tamaño necesario para que entren 3 renglones */
+  text-align: center;
+  border: none;
+  background-color: #F3F5FC;
+  font-weight: 400;
+  font-size: 32px;
+  color: #0A3871;
+  resize: none;
+  flex-grow: 1;
+  outline: none;
+}
+
+h2{
+  text-align: center;
+  margin: 0;
+  font-weight: 400;
+  font-size: 32px;
+  color: #0A3871;
+}
+
+.equivocaciones{
+  text-align: center;
+  margin: 0;
+  font-weight: 400;
+  font-size: 32px;
+  color: #0A3871;
+}
+
+h3{
+  max-height: 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  padding: 0;
+}
+
+h3 span{
+  display: inline-block;
+  background-image: url(../img/alert.png);
+  width: 16px;
+  height: 16px;
+  object-fit: fill;
+}
+
+
+
+.options{
+  width: 100%;
+  min-height: 158px;
+  max-height: 158px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: center;
+}
+
+.options__button{
+  padding: 0;
+  height: 67px;
+  width: 343px;
+  border: 1px solid #0A3871;
+  border-radius: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.options__button-primary{
+  background-color: #0A3871;
+  color: #FFFFFF;
+}
+
+.options__button-secondary{
+  background-color: #EFF1FA ;
+  color: #0A3871;
+}
+
+.invisible{
+  display: none;
+}
+
+
+
+@media screen and (min-width: 718px ){
+  body{
+    padding: 40px
+  }
+
+  .container{
+    height: calc(100vh - 60px - 80px);
+  }
+
+  .ahorcado{
+    height: calc(50vh - 70px);
+  }
+  .options{
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+}
+
